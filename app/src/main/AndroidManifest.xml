@@ -21,6 +21,8 @@
         </activity>
         <activity android:name=".newmvp.NewMvpActivity">
         </activity>
+        <activity android:name=".newmvp_fragment.NewActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -9,12 +9,14 @@ import android.widget.Button;
 import com.example.ywb.mvpsample.mvc.MvcActivity;
 import com.example.ywb.mvpsample.mvp.MvpActivity;
 import com.example.ywb.mvpsample.newmvp.NewMvpActivity;
+import com.example.ywb.mvpsample.newmvp_fragment.NewActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private Button mvcBtn;
     private Button mvpBtn;
     private Button newMvpBtn;
+    private Button newMvpFragmentBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mvpBtn.setOnClickListener(this);
         newMvpBtn = (Button)findViewById(R.id.btn_mvp_new);
         newMvpBtn.setOnClickListener(this);
+        newMvpFragmentBtn = (Button) findViewById(R.id.btn_mvp_new_fragment);
+        newMvpFragmentBtn.setOnClickListener(this);
 
     }
 
@@ -40,6 +44,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_mvp_new:
                 toStartActivity(NewMvpActivity.class);
+                break;
+            case R.id.btn_mvp_new_fragment:
+                toStartActivity(NewActivity.class);
                 break;
         }
     }
