@@ -5,7 +5,7 @@ package com.example.ywb.mvpsample.basemvp;
  */
 public interface BaseView {
 
-    void showLodding();
+    void showLoading();
 
-    void hideLodding();
+    void hideLoading();
 }

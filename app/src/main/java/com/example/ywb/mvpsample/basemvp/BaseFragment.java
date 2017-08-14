@@ -20,7 +20,7 @@ public abstract class BaseFragment<V, T extends BasePresenter<V>> extends Fragme
     @Override
     public void onDestroy() {
         super.onDestroy();
-        presenter.dettach();
+        presenter.detach();
     }
 
     protected abstract T initPresenter();

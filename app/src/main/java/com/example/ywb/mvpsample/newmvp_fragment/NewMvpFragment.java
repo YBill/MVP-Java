@@ -14,7 +14,6 @@ import android.widget.Toast;
 import com.example.ywb.mvpsample.R;
 import com.example.ywb.mvpsample.basemvp.BaseFragment;
 import com.example.ywb.mvpsample.newmvp.NewMvpPresenter;
-import com.example.ywb.mvpsample.newmvp.NewMvpView;
 
 import java.util.List;
 

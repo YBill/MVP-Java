@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * Created by YWB on 2016/5/30.
  */
-public class NewMvpActivity extends BaseMvpActivity<NewMvpView, NewMvpPresenter> implements NewMvpView, AdapterView.OnItemClickListener{
+public class NewMvpActivity extends BaseMvpActivity<NewMvpContract.View, NewMvpContract.Presenter> implements NewMvpContract.View, AdapterView.OnItemClickListener {
 
     private ListView listView;
     private ArrayAdapter adapter;
@@ -37,8 +37,8 @@ public class NewMvpActivity extends BaseMvpActivity<NewMvpView, NewMvpPresenter>
         super.onResume();
     }
 
-    private void showList(List list){
-        if(adapter == null){
+    private void showList(List list) {
+        if (adapter == null) {
             adapter = new ArrayAdapter(NewMvpActivity.this, android.R.layout.simple_list_item_1, list);
             listView.setAdapter(adapter);
         }
@@ -66,7 +66,7 @@ public class NewMvpActivity extends BaseMvpActivity<NewMvpView, NewMvpPresenter>
 
     @Override
     public void showMessage(String msg) {
-        Toast.makeText(NewMvpActivity.this, msg,Toast.LENGTH_SHORT).show();
+        Toast.makeText(NewMvpActivity.this, msg, Toast.LENGTH_SHORT).show();
     }
 
     @Override

@@ -11,7 +11,7 @@ public abstract class BasePresenter<T> {
         this.mView = mView;
     }
 
-    protected void dettach(){
+    protected void detach(){
         mView = null;
     }
 }
